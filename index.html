@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Notes App Pro</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>📝 Notes App Pro</h1>
+
+        <p id="subtitle">
+            Professional Notes Manager
+        </p>
+
+    </header>
+
+    <!-- Language Switch -->
+
+    <div class="language-box">
+
+        <label id="languageLabel">
+
+            🌐 Language
+
+        </label>
+
+        <select id="languageSelect">
+
+            <option value="en">
+
+                🇬🇧 English
+
+            </option>
+
+            <option value="de">
+
+                🇩🇪 Deutsch
+
+            </option>
+
+        </select>
+
+    </div>
+
+    <!-- Note Form -->
+
+    <section class="editor">
+
+        <input
+
+            type="text"
+
+            id="titleInput"
+
+            placeholder="Title">
+
+        <textarea
+
+            id="textInput"
+
+            placeholder="Content">
+
+        </textarea>
+
+        <button id="saveBtn">
+
+            Save Note
+
+        </button>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search">
+
+        <input
+
+            type="text"
+
+            id="searchInput"
+
+            placeholder="Search Notes...">
+
+    </section>
+
+    <!-- Notes -->
+
+    <section id="notesContainer">
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
