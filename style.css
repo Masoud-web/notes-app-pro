@@ -1,0 +1,374 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:#edf2f7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+/* Container */
+
+.container{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+/* Header */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+header h1{
+
+    font-size:34px;
+
+    color:#2563eb;
+
+    margin-bottom:8px;
+
+}
+
+header p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+/* Language */
+
+.language-box{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    padding:15px;
+
+    background:#f8fafc;
+
+    border-radius:12px;
+
+}
+
+.language-box label{
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+.language-box select{
+
+    padding:10px;
+
+    border-radius:10px;
+
+    border:2px solid #d1d5db;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
+
+/* Editor */
+
+.editor{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.editor input{
+
+    padding:14px;
+
+    font-size:16px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+.editor textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+    padding:14px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.editor input:focus,
+.editor textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+/* Save Button */
+
+#saveBtn{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#saveBtn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* Search */
+
+.search{
+
+    margin-top:25px;
+
+}
+
+.search input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.search input:focus{
+
+    outline:none;
+
+    border-color:#16a34a;
+
+}
+
+/* Notes */
+
+#notesContainer{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+
+    gap:20px;
+
+}
+
+/* Card */
+
+.note{
+
+    background:#fff8b5;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.25s;
+
+}
+
+.note:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.note h3{
+
+    color:#333;
+
+    margin-bottom:10px;
+
+}
+
+.note p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+}
+
+.note small{
+
+    color:#888;
+
+}
+
+/* Buttons */
+
+.note-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:8px;
+
+    margin-top:15px;
+
+}
+
+.note-actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    color:white;
+
+    transition:.2s;
+
+}
+
+.note-actions button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.edit-btn{
+
+    background:#f59e0b;
+
+    color:#000;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+}
+
+.pin-btn{
+
+    background:#16a34a;
+
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .container{
+
+        padding:20px;
+
+    }
+
+    .language-box{
+
+        flex-direction:column;
+
+        gap:12px;
+
+        align-items:flex-start;
+
+    }
+
+    #notesContainer{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
